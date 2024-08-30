@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EFEFEF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .signup-container {
+            background-color: #FFF;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .signup-container h2 {
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+        .signup-container label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+        .signup-container input[type="text"], 
+        .signup-container input[type="email"], 
+        .signup-container input[type="password"] {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #CCC;
+            border-radius: 6px;
+        }
+        .signup-container input[type="submit"] {
+            background-color: #3498DB;
+            color: #FFF;
+            border: none;
+            padding: 0.75rem;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .signup-container input[type="submit"]:hover {
+            background-color: #2980B9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="signup-container">
+    <h2>Register</h2>
+    <form action="#">
+        <label for="first">First Name</label>
+        <input type="text" id="first" name="first" required>
+        
+        <label for="last">Last Name</label>
+        <input type="text" id="last" name="last" required>
+        
+        <label for="userEmail">Email</label>
+        <input type="email" id="userEmail" name="userEmail" required>
+        
+        <label for="userPassword">Password</label>
+        <input type="password" id="userPassword" name="userPassword" required>
+        
+        <input type="submit" value="Register">
+    </form>
+</div>
+
+</body>
+</html>
